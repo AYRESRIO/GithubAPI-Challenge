@@ -29,6 +29,18 @@ a,a:hover {
   max-width: 1440px;
   margin:0 auto;
 }
+.before-container {
+  border-radius: 16px;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-font-quintenary);
+  padding: 20px;
+  min-height: 270px;
+  display: flex;
+  width: 100%;
+  max-width: 1251px;
+  margin:  0 auto ;
+  
+}
 
 .mb30 {
   margin-bottom: 30px;
@@ -46,4 +58,10 @@ a,a:hover {
   color: var(--color-font-quaternary);
 }
 .dflex {display: flex;}
-
+.adjust {
+  padding: 20px 0;
+    display: flex;
+    width: 100%;
+    max-width: 1251px;
+    margin: 0 auto ;
+}
