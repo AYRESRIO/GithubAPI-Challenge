@@ -1,9 +1,11 @@
+import'./styles.css';
+
 export default function Header() {
   return (
     <header>
-      <nav>
-        <h1>Github API</h1>
-      </nav>
+      <div className = "container"> 
+        <h1 className = 'site-name'>Github API</h1>
+      </div>
     </header>
   );
 }
