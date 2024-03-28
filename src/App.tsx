@@ -1,11 +1,19 @@
-import './App.css';
-function App() {
-  
-  return (
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import HomeBody from "./routes/Home/HomeBody";
+import Before from "./routes/Home/Before";
 
-    <h1>GithubAPI-Challenge</h1>
-    
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<HomeBody />} />
+          <Route path="before" element={<Before />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;
